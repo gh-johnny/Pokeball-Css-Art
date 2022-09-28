@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeball</title>
+    <style>
+        body{
+        background-color: #6CB3A9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        }
+        .big {
+        width: 200px;
+        margin-right: 17px;
+        margin-bottom: 17px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        }
+        .center{
+        width: 50px;
+        aspect-ratio: 1;
+        background-color: #F6DF96;
+        border-radius: 50%;
+        border: 10px solid #781728;
+        }
+        .square{
+        position: absolute;
+        z-index: -1;
+        width: 90%;
+        height: 10%;
+        background: #781728;
+        }
+        .red,
+        .white {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 45%;
+        background: #D25B70;
+        border-radius: 100px 100px 0px 0px;
+        }
+    
+        .white{
+        top: 110px;
+        rotate: 180deg;
+        background: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class='big'>
+        <div class='red'></div>
+        <div class='center'></div>
+        <div class='square'></div>
+        <div class='white'></div>
+    </div>
+</body>
+</html>
